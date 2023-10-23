@@ -1,0 +1,29 @@
+.modal{
+    .principalLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px ;
+       h3{
+        color: orange;
+       }
+        .insidePrincipalLogin {
+          max-width: 1300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        .errorMsg {
+          margin-top: 20px;
+          color: orange;
+        }
+      }
+      .enterButtonAdd {
+        width: 100px;
+        background-color: rgb(230, 149, 0) !important;
+        border: 1px solid orange !important;
+        
+      }
+}

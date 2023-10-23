@@ -1,0 +1,129 @@
+.principal-final {
+  text-align: center;
+  padding: 20px 30px 40px;
+  margin-top: 20px;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+  hr {
+    margin: 30px 0px;
+  }
+  h1 {
+    color: white;
+    margin-bottom: 40px;
+  }
+  h6 {
+    color: orange;
+  }
+  .d-Flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80vw;
+    margin-top: 20px;
+    .match {
+      border: 1px solid rgb(121, 121, 121);
+      padding: 10px;
+      text-align: left;
+      border-radius: 8px;
+      box-shadow: 2px 2px 5px black;
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      .teams {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+      }
+      p {
+        margin: 0;
+      }
+      .points {
+        border-left: 1px solid orange;
+        display: flex;
+        flex-direction: row;
+        padding: 0px 10px;
+        .p1 {
+          margin: 4px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          >h6{
+            font-size: 10px;
+          }
+          .editPoints{
+            width: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center !important;
+            margin: 0px 10px;
+            background: none;
+            border: 1px solid rgb(121, 121, 121);
+            border-radius: 6px;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            -webkit-appearance: textfield;
+          }
+          .editPoints::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+          }
+          .editPoints::placeholder {
+            font-size: 18px;
+            color: rgba(121, 121, 121, 0.251);
+          }
+        }
+      }
+    }
+    .vertical {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      .match {
+        border: 1px solid rgb(121, 121, 121);
+        padding: 10px;
+        text-align: left;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px black;
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        p {
+          margin: 0;
+        }
+        .teams {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 7px;
+        }
+        .points{
+          border-left: 1px solid orange;
+          display: flex;
+          flex-direction: row;
+          padding: 0px 10px;
+          
+        }
+        .p1 {
+          margin: 4px;
+          color: white;
+        }
+      }
+      .match:hover {
+        border: 1px solid white;
+        cursor: pointer;
+      }
+    }
+  }
+}

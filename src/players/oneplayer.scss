@@ -1,0 +1,203 @@
+.principalOnePlayer {
+  min-height: calc(100vh - 150px);
+  color: rgb(121, 121, 121);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  hr {
+    color: rgba(255, 255, 255, 0.486);
+    width: 40%;
+    max-width: 1300px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 25px;
+  }
+  h1 {
+    color: white;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 0px;
+    img{
+      width: 30px;
+    }
+    img:hover{
+      cursor: pointer;
+    }
+  }
+  .insidePrincipalOnePlayer {
+    max-width: 800px;
+    width: 50%;
+    min-width: 340px;
+    .marginHr{
+      margin: auto;
+      margin-top: 30px;
+    }
+    .stats {
+      margin-top: 15px;
+      >p{
+        text-align: center;
+      }
+       .oneMatch {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid rgb(121, 121, 121);
+        margin-bottom: 8px;
+        padding: 2px 8px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px black;
+        .oneMatchDiv {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          // padding-right: 15px;
+          width: 100%;
+          .match {
+           
+            width: 100%;
+            >p{
+              color: rgb(255, 255, 255) ;
+              font-weight: 600 !important;
+              >p{
+                color: orange ;
+                font-weight: 600 !important;
+              }
+            }
+          }
+          .oneMatchData {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+          }
+        }
+        p {
+          margin: 0;
+          color: white;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 4px;
+
+          span {
+            font-weight: bold;
+            margin: 0 6px;
+            color: rgb(231, 167, 49);
+          }
+        }
+        .height {
+          min-width: 65px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+      .oneMatch:hover{
+        border: 1px solid white;
+      }
+    }
+    .rowOnePlayer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .imgPlayer {
+        width: 180px;
+        height: 260px;
+        border: 2px solid rgb(121, 121, 121);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 5px black;
+        overflow: hidden;
+        img{
+            height: 120%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+           
+        }
+      }
+      .imgPlayer:hover{
+        border: 2px solid white;
+        cursor: pointer;
+    
+      }
+      .allRows{
+        
+        .rowData {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 3px;
+          gap: 5px;
+          h6 {
+            margin: 0;
+            width: 100px !important;
+          }
+          p {
+            margin: 0;
+            color: white;
+          }
+        }
+        .avg{
+          margin-top: 14px;
+          gap: 26px;
+          justify-content: center;
+          border: 1px solid rgb(65, 65, 65);
+          border-left: 6px solid orange;
+          border-radius: 4px;
+          padding: 4px 8px;
+          box-shadow: 2px 2px 5px black;
+          >div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+              color: orange;
+              font-size: 15px;
+              font-weight: 700;
+            }
+            h2{
+              color: white;
+              font-weight: 700;
+              font-size: 32px !important;
+              margin: 0px;
+            }
+          }
+        
+        }
+      }
+   
+    }
+  }
+}
+@media (max-width: 600px){
+    h1{
+        font-size: 22px !important;
+        flex-direction: column !important;
+    }
+    .rowOnePlayer{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
+    }
+    .oneMatchDiv{
+        flex-direction: column !important;
+        gap: 2px !important;
+        .match{
+            width: 100% !important;
+            border: none !important;
+        }
+        .oneMatchData{
+            width: 100% !important;
+        }
+    }
+}
+    
+

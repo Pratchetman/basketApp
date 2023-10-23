@@ -1,0 +1,215 @@
+.principalStats {
+  min-height: calc(100vh - 150px);
+  color: rgb(121, 121, 121);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .roundSelect{
+    max-width: 800px;
+    width: 50%;
+    min-width: 340px;
+    margin-bottom: 20px;
+}
+.groupsBut{
+  width: 90%;
+  margin: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  .group{
+      background: none !important;
+      border: 1px solid rgb(121, 121, 121);
+  }
+  .group:hover{
+      background-color: rgba(255, 166, 0, 0.075) !important;
+  }
+  .selected{
+      background-color: orange !important;
+      border: 1px solid orange;
+  }
+}
+  .insidePrincipalStats {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    .errorMsg{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .imgError{
+        width: 300px;
+        filter: opacity(0.2);
+      }
+    }
+  
+    .update{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .updateBut{
+            margin-top: 20px;
+            background-color: rgb(231, 167, 49);
+            border: none;
+            width: 160px;
+        }
+        p{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .finishRound{
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .oneMatch {
+      display: flex;
+      width: 100%;
+      border: 1px solid rgb(121, 121, 121);
+      justify-content: space-between;
+      border-radius: 8px;
+      padding: 6px;
+      align-items: center;
+      box-shadow: 2px 2px 5px black;
+      .points{
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        margin: 0px 10px;
+        background: none;
+        border: 1px solid rgb(121, 121, 121);
+        border-radius: 6px;
+        color:  white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        -webkit-appearance: textfield;
+      }
+      .points::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+      }
+      .points::placeholder{
+        font-size: 18px;
+        color: rgba(121, 121, 121, 0.251) ;
+      }
+      .matchHome {
+        width: 47%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        p {
+          margin: 0;
+          width: 100%;
+          text-align: end;
+        }
+        >h6{
+            width: 6%;
+            min-width: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            margin: 0px 10px;
+        }
+      }
+      .matchAway {
+        width: 47%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        p {
+          margin: 0;
+        }
+        >h6{
+            width: 6%;
+            min-width: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            margin: 0px 10px;
+        }
+      }
+      >h6 {
+        width: 4%;
+        min-width: 26px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: rgb(231, 167, 49);
+        margin: 0px 10px;
+        .editar{
+          font-size: 11px !important;
+          margin-bottom: 1px;
+        }
+      }
+    }
+    .oneMatch:hover {
+      border: 1px solid white;
+      cursor: pointer;
+    }
+    .pages {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        margin: 0;
+      }
+      .previous{
+        width: 34%;
+        text-align: start;
+      }
+      .previous:hover{
+        cursor: pointer;
+        color: white;
+      }
+      h3 {
+        width: 32%;
+        text-align: center;
+        margin: 0;
+      }
+      .next{
+        width: 34%;
+        text-align: end;
+      }
+      .next:hover{
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+    .matchHome{
+        display: flex;
+        flex-direction: column-reverse !important;
+        justify-content: start !important;
+        height: 100%;
+        padding-top: 3px;
+        p{
+            text-align: center !important;
+        }
+    }
+    .matchAway{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: start !important;
+        height: 100%;
+        padding-top: 3px;
+        p{
+            text-align: center !important;
+        }
+    }
+    
+}

@@ -1,0 +1,63 @@
+.rankingPrincipal {
+  min-height: calc(100vh - 150px);
+  color: rgb(121, 121, 121);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .groupsBut{
+    width: 90%;
+    margin: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    .group{
+        background: none !important;
+        border: 1px solid rgb(121, 121, 121);
+    }
+    .group:hover{
+        background-color: rgba(255, 166, 0, 0.075) !important;
+    }
+    .selected{
+        background-color: orange !important;
+        border: 1px solid orange;
+    }
+}
+  .insideRankingPrincipal {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    .tableRanking{
+      box-shadow: 2px 2px 5px black !important;
+    }
+    .pos {
+      color: orange;
+      font-weight: bold;
+    }
+    .positionTeam {
+      td {
+        height: 50px;
+        overflow: hidden;
+        p {
+          margin: 0;
+          max-height: 45px;
+        }
+      }
+      th {
+        color: rgb(121, 121, 121);
+        height: 10px !important;
+      }
+    }
+    tbody{
+      h6{
+        text-align: center;
+      }
+    }
+  }
+}

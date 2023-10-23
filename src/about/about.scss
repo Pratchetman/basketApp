@@ -1,0 +1,63 @@
+.principalAbout {
+  padding: 120px 20px 20px;
+  max-width: 1300px;
+  margin: auto;
+  .aboutUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    > div {
+      width: 40%;
+        min-width: 250px;
+      img {
+        width: 100%;
+        
+      }
+      > article {
+        p {
+          margin: 0px;
+          color: rgb(121, 121, 121);
+          font-size: 14px;
+        }
+        .info{
+            color: orange;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+      }
+    }
+    .logo {
+        border: 1px solid  rgb(65, 65, 65);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 5px black;
+        padding: 20px;
+    }
+  }
+  .rrss{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    img{
+        width: 40px;
+    }
+    img:hover{
+        cursor: pointer;
+    }
+  }
+}
+@media (max-width: 800px) {
+    .principalAbout{
+        padding: 120px 10px 10px;
+        .logo{
+            padding: 10px 0px;
+        }
+    }
+}

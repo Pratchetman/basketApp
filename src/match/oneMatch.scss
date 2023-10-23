@@ -1,0 +1,154 @@
+.compl_Modal {
+  border: 1px solid orange;
+  border-radius: 8px;
+  background-color: rgb(39, 39, 39);
+  .modal-header {
+    background-color: rgb(39, 39, 39);
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: rgb(121, 121, 121);
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+    .logoModal {
+      width: 700px;
+      filter: opacity(0.05);
+      position: absolute;
+      top: 0px;
+    }
+    .title {
+      text-align: center;
+      span {
+        color: orange;
+      }
+      p {
+        margin: 0px;
+      }
+    }
+    border-bottom: 1px solid rgb(121, 121, 121);
+  }
+
+  .modal-body {
+    background-color: rgb(39, 39, 39);
+    border: 0px;
+    color: rgb(121, 121, 121);
+    text-align: center;
+    .table {
+      .points {
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        margin: 0px 10px;
+        background: none;
+        border: 1px solid rgb(121, 121, 121);
+        border-radius: 6px;
+        color: orange;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 50% !important;
+        margin-right: 50% !important;
+        transform: translateX(-50%);
+        -webkit-appearance: textfield;
+      }
+      .points::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      .points::placeholder {
+        font-size: 18px;
+        color: rgba(121, 121, 121, 0.251);
+      }
+      p {
+        margin: 0px;
+      }
+      td {
+        h6 {
+          margin: 0px;
+          color: orange;
+        }
+        .total {
+          color: white;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    background-color: rgb(39, 39, 39);
+    border: 0px;
+  }
+}
+@media (min-width: 770px) {
+  .simobile {
+    display: none;
+  }
+}
+@media (max-width: 374px) {
+  table{
+    th{
+      font-size: 11px !important;
+    }
+    td {
+      p{
+        font-size: 12px !important;
+      }
+      h6 {
+        font-size: 12px !important;
+      }
+    }
+  }
+
+}
+@media (max-width: 769px) {
+  .modal-body {
+    padding: 2px !important;
+    .table {
+      tr {
+        font-size: 12px;
+        text-align: center;
+      }
+      span {
+        font-size: 12px;
+      }
+      td {
+        padding: 4px;
+        text-align: center;
+        .points {
+          width: 30px !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center !important;
+          background: none;
+          border: 1px solid rgb(121, 121, 121);
+          border-radius: 4px !important;
+          color: white;
+          text-align: center;
+          font-size: 14px !important;
+          font-weight: bold;
+          -webkit-appearance: textfield;
+          margin-left: 50% !important;
+          margin-right: 50% !important;
+          transform: translateX(-50%);
+        }
+        .points::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+        .points::placeholder {
+          font-size: 18px;
+          color: rgba(121, 121, 121, 0.251);
+        }
+      }
+
+      .nomobile {
+        display: none;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}

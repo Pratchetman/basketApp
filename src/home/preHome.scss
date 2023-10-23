@@ -1,0 +1,49 @@
+.principalPreHome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .insidePrincipalPreHome {
+    max-width: 1300px;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      img {
+      width: 65%;
+      min-width: 340px;
+    }
+    p{
+      margin-top: 8px;
+      font-size: 14px;
+      color: rgb(121, 121, 121);
+      margin-bottom: 0px;
+    }
+    .enterButton {
+      width: 160px;
+      background-color: rgb(230, 149, 0);
+      border: none;
+    }
+    .buttons{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .login {
+      background-color: white;
+      color: gray;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .insidePrincipalPreHome{
+    img{
+      width: 90%;
+    }
+  }
+  
+}
+

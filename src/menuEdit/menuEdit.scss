@@ -1,0 +1,36 @@
+.menuEditPrincipal{
+    min-height: calc(100vh - 150px);
+    color: rgb(121, 121, 121);
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .insideMenuEditPrincipal{
+        max-width: 1300px;
+        text-align: center;
+        width: 50%;
+        .section{
+            border: 1px solid rgb(121, 121, 121);;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            padding: 14px;
+            box-shadow: 2px 2px 5px black;
+            background-color: rgba(255, 255, 255, 0.032);
+            h6{
+                margin: 0;
+                font-size: 24px;
+                color: rgb(231, 167, 49);
+            }
+        }
+        .section:hover{
+            border: 1px solid white;
+            cursor: pointer;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .insideMenuEditPrincipal{
+        width: 80% !important;
+    }    
+}

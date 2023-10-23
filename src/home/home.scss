@@ -1,0 +1,84 @@
+.principalHome {
+  min-height: calc(100vh - 150px);
+  color: rgb(121, 121, 121);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  hr{
+    color: rgba(255, 255, 255, 0.486);
+    width: 40%;
+    max-width: 1300px;
+    box-shadow: 2px 2px black;
+    margin-bottom: 25px;
+  }
+  h1{
+    color: white;
+    text-shadow: 1px 1px black;
+   
+  }
+  .insidePrincipalHome {
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    .sectionHome{
+        width: 40%;
+        min-width: 300px;
+        border: 2px solid white;
+        height: 250px;
+        border-radius: 8px;
+        border-color: rgb(121, 121, 121);
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.904);
+        filter: brightness(1);
+        h5{
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px rgb(51, 46, 44);
+            font-size: 25px;
+            
+        }
+        box-shadow: 2px 2px 5px black;
+    }
+    .sectionHome:hover{
+        border-color: white;
+        cursor: pointer;
+      
+    }
+    
+    .players{
+        background-image: url("../../public/images/playerslow.jpg");
+        background-position: top;
+        background-size: cover;
+    }
+    .stats{
+        background-image: url("../../public/images/partidoslow.jpg");
+        background-position: top;
+        background-size: cover;
+    }
+    .ranking{
+        background-image: url("../../public/images/statslow.jpg");
+        background-position: top;
+        background-size: 80%;
+    }
+    .team{
+        background-image: url("../../public/images/Basketmanialow.png");
+        background-position: center;
+        background-size: cover;
+    }
+    .editor{
+      background-image: url("../../public/images/vestuario.jpg");
+      background-position: top;
+      background-size: cover;
+  }
+  }
+}
+@media (max-width: 500px) {
+  .sectionHome{
+    height: 140px !important;
+  }
+}
