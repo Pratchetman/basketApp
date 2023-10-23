@@ -32,11 +32,19 @@ export const OnePlayer = ({ setNav }) => {
   }, []);
 
   const calculatePp = (playerStats) =>{
-    let totalPoints = 0;
-    for (let i = 0; i < playerStats.length; i++){
-      totalPoints += playerStats[i].points;
+    let totals = {
+      points: 0,
+      faults: 0,
+      tlInt: 0,
+      tlCon: 0
     }
-    return totalPoints;
+    for (let i = 0; i < playerStats.length; i++){
+      totals.points += playerStats[i].points;
+      totals.faults += playerStats[i].faults;
+      totals.tlInt += playerStats[i].tlInt;
+      totals.tlCon += playerStats[i].tlCon;
+    }
+    return totals;
   }
 
   return (
@@ -82,9 +90,10 @@ export const OnePlayer = ({ setNav }) => {
                 <p>{onePlayer.pos ? onePlayer.pos : "n/d"}</p>
               </div>
               <div className="rowData avg">
-                <div><p>P.Jug.</p><h2>{playerStats.length}</h2></div>
-                <div><p>P.Tot.</p><h2>{calculatePp(playerStats)}</h2></div>
-                <div><p>Media</p>{playerStats.length > 0 ? <h2>{calculatePp(playerStats) / playerStats.length}</h2> : <h2>0</h2>}</div>
+                <div><p>P.Jug.</p>{playerStats.length > 0 ? <h2>{playerStats.length}</h2> : <h2>-</h2>}</div>
+                <div><p>P.Tot.</p>{playerStats.length > 0 ? <h2>{calculatePp(playerStats).points}</h2> : <h2>-</h2>}</div>
+                <div><p>Media</p>{playerStats.length > 0 ? <h2>{calculatePp(playerStats).points / playerStats.length}</h2> : <h2>-</h2>}</div>
+                <div><p>% TL</p>{calculatePp(playerStats).tlInt > 0 ? <h2>{((calculatePp(playerStats).tlCon / calculatePp(playerStats).tlInt) * 100).toFixed(0)}%</h2> : <h2>-</h2>}</div>
               </div>
             </div>
             <div className="imgPlayer" onClick={() => setShowImage(!showImage)}>

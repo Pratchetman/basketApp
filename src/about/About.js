@@ -28,21 +28,21 @@ export const About = () => {
           </article>
           <article>
             <p>Email: </p>
-            <p className="info">cb.basketmania@hotmail.com</p>
+            <p className="info">basketmaniamalaga@yahoo.es</p>
           </article>
         </div>
       </section>
       <section>
         <div className="rrss">
-          <a href="https://www.facebook.com/basketmania.lapalmilla.3"  target="_blank" >
+          <a
+            href="https://www.facebook.com/basketmania.lapalmilla.3"
+            target="_blank"
+          >
             <img src="/images/fb.png" alt="" />
           </a>
-          <a href="https://www.instagram.com/Basketmanialp/"  target="_blank">
+          <a href="https://www.instagram.com/Basketmanialp/" target="_blank">
             <img src="/images/in.png" alt="" />
           </a>
-         
-            <img src="/images/tt.png" alt="" />
-         
         </div>
       </section>
     </div>
